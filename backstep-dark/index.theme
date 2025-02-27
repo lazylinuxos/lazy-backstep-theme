@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Backstep-Dark
+Comment=Dark theme for LazyLinux
+Version=v0.0.1
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Backstep-Dark
