@@ -646,6 +646,33 @@ treeview.view.trough:selected {
 }
 /* end of progressbar*/
 
+/* Mouse click and drag selection rectangle */
+/* which took me over an hour to find because it has a fucking stupid name like 'rubberband' or something */
+/* special thanks to the gnome project for wasting my time and fucking everything up for the past 9 years. */
+/* assholes*/
+.rubberband, rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband, .content-view .rubberband, .view .rubberband {
+    border: 1px solid @selected_bg; 
+    background-color: alpha(@selected_bg, 0.25);
+  }
+  
+  /**********************************************/
+  /* XFCE tweaks */
+  /**********************************************/
+  
+  XfdesktopIconView.view {
+    color: alpha(@selected_bg, 0.25);
+    background-color: transparent;
+  }
+  
+  XfdesktopIconView.label {
+    color: @text_color;
+  }
+  
+  XfdesktopIconView.view:active {
+    border: 1px solid @selected_bg; 
+    background-color: alpha(@selected_bg, 0.25);
+  }
+
 /* tooltips */
 /* ======== */
 tooltip,
